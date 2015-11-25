@@ -28,7 +28,7 @@ module Grape
       private
 
       def key
-        "#{request.method}:#{request.path}:#{request.client_identifier}"
+        "#{request.client_identifier}"
       end
 
       def ttl_in_seconds
